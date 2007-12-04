@@ -1,7 +1,7 @@
 Summary:	Embedded Ruby
 Name:		eruby
 Version:	1.0.5
-Release:	2mdk
+Release:	 %mkrel 2
 License:	GPL
 Group:		Development/Other
 URL:		http://www.modruby.net/en/index.rbx/eruby/whatis.html
