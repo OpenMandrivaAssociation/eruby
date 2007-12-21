@@ -6,6 +6,7 @@ License:	GPL
 Group:		Development/Other
 URL:		http://www.modruby.net/en/index.rbx/eruby/whatis.html
 Source0:	%{name}-%{version}.tar.bz2
+Buildroot:	%{_tmppath}/%{name}
 BuildRequires:	ruby-devel
 Requires:	ruby
 
