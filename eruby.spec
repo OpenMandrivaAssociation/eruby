@@ -1,8 +1,9 @@
 Summary:	Embedded Ruby
 Name:		eruby
 Version:	1.0.5
-Release:	 %mkrel 2
-License:	GPL
+Release:	%mkrel 3
+# eruby is GPLv2+, liberuby is LGPLv2
+License:	GPLv2+ and LGPLv2+
 Group:		Development/Other
 URL:		http://www.modruby.net/en/index.rbx/eruby/whatis.html
 Source0:	%{name}-%{version}.tar.bz2
@@ -22,19 +23,19 @@ eRuby enables you to embed a Ruby code to a HTML file.
 
 %build
 ./configure.rb \
-    --prefix=%_prefix \
-    --datadir=%_datadir \
-    --mandir=%buildroot%_mandir 
+    --prefix=%{_prefix} \
+    --datadir=%{_datadir} \
+    --mandir=%{buildroot}%{_mandir} 
 make
 
 %install
-rm -rf %buildroot
-make DESTDIR=%buildroot site-install
-chmod 755 %buildroot/%{ruby_archdir}/eruby.so
-strip %buildroot/%{ruby_archdir}/eruby.so
+rm -rf %{buildroot}
+make DESTDIR=%{buildroot} site-install
+chmod 755 %{buildroot}/%{ruby_archdir}/eruby.so
+strip %{buildroot}/%{ruby_archdir}/eruby.so
 
 %clean
-rm -rf %buildroot
+rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)
