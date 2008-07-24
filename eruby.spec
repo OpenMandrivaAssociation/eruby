@@ -1,7 +1,7 @@
 Summary:	Embedded Ruby
 Name:		eruby
 Version:	1.0.5
-Release:	%mkrel 3
+Release:	%mkrel 5
 # eruby is GPLv2+, liberuby is LGPLv2
 License:	GPLv2+ and LGPLv2+
 Group:		Development/Other
