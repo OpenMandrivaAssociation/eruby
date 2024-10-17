@@ -5,7 +5,7 @@ Release:	%mkrel 6
 # eruby is GPLv2+, liberuby is LGPLv2
 License:	GPLv2+ and LGPLv2+
 Group:		Development/Other
-URL:		http://www.modruby.net/en/index.rbx/eruby/whatis.html
+URL:		https://www.modruby.net/en/index.rbx/eruby/whatis.html
 Source0:	%{name}-%{version}.tar.bz2
 Buildroot:	%{_tmppath}/%{name}
 BuildRequires:	ruby-devel
